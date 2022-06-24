@@ -1,6 +1,7 @@
 #include "iostream"
 #include "vector"
 #include "Two_Sum.h"
+#include "Monk and Rotation.h"
 
 using namespace std;
 unsigned binarySearch(vector<int> & nums, int key)
@@ -37,15 +38,16 @@ vector<int> twoSum(vector<int>& nums, int target) {
 
 int main()
 {
-    vector<int> nums;
-    int value;
-    for( int i = 0; i<4; i++ )
-    {
-        cin>>value;
-        nums.emplace_back(value);
-    }
-    unsigned target;
-    cin>>target;
-    twoSum(nums,target);
+//    vector<int> nums;
+//    int value;
+//    for( int i = 0; i<4; i++ )
+//    {
+//        cin>>value;
+//        nums.emplace_back(value);
+//    }
+//    unsigned target;
+//    cin>>target;
+//    twoSum(nums,target);
+    MonkandRotation();
     return 0;
 }
