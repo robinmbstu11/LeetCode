@@ -2,6 +2,10 @@
 #include "vector"
 #include "Two_Sum.h"
 #include "Monk and Rotation.h"
+#include "MonkandInversions.h"
+#include "JamesandtheMenus.h"
+#include "CF_GR_21_A.h"
+#include "_121BestTimetoBuyandSellStock.h"
 
 using namespace std;
 unsigned binarySearch(vector<int> & nums, int key)
@@ -48,6 +52,15 @@ int main()
 //    unsigned target;
 //    cin>>target;
 //    twoSum(nums,target);
-    MonkandRotation();
+//    function1();
+      int n,val;
+      cin>>n;
+      vector<int> p;
+      for( int i=0; i<n; i++ ) {
+          cin>>val;
+          p.emplace_back(val);
+      }
+      _121BestTimetoBuyandSellStock ob1;
+      ob1.maxProfit(p);
     return 0;
 }
