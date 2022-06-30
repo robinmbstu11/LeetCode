@@ -2,16 +2,20 @@
 #include "vector"
 #include "string"
 #include "sstream"
+#include "167._Two_Sum_IIInput Array Is Sorted.h"
 
 
 using namespace std;
 
 int main()
 {
-    long long n,m;
-    while (cin>>n>>m)
-    {
-        cout<<n*m/2<<endl;
+    vector<int> ar;
+    int val,n;
+    cin>>n;
+    for (int i = 0; i < n; ++i) {
+        cin>>val;
+        ar.emplace_back(val);
     }
-    return 0;
+    cin>>n;
+    twoSum(ar,n);
 }
