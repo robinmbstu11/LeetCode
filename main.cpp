@@ -2,20 +2,18 @@
 #include "vector"
 #include "string"
 #include "sstream"
-#include "167._Two_Sum_IIInput Array Is Sorted.h"
-
+#include "unordered_map"
+#include "LeetCode_238. Product of Array Except Self.h"
 
 using namespace std;
 
-int main()
-{
-    vector<int> ar;
-    int val,n;
+int main() {
+    int n,val;
+    vector<int> input;
     cin>>n;
-    for (int i = 0; i < n; ++i) {
+    for( int i=0; i<n; i++ ) {
         cin>>val;
-        ar.emplace_back(val);
+        input.emplace_back(val);
     }
-    cin>>n;
-    twoSum(ar,n);
+    productExceptSelf(input);
 }
